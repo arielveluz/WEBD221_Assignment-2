@@ -1,0 +1,62 @@
+@raleWay: "Raleway", sans-serif;
+@roboto: "Roboto", sans-serif;
+
+body {
+    background-image: url("../images/bg.png");
+    font-family: @roboto;
+}
+.site-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: orange;
+    opacity: 0.75;
+}
+
+nav {
+    font-family: @roboto;
+    text-align: right;
+    a {
+        padding: 10px 15px;
+        text-decoration: none;
+        display:inline-block;
+        color: black;
+
+    a:visited {
+    color: black;
+        }   
+    }
+}
+
+ul {
+    padding: 15px;
+}
+
+li {
+    display: inline;
+}
+
+aside {
+    float: left;
+    padding: 20px;
+    width: 25%;
+
+    img {
+        padding: 0 17%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+h1,
+h2 {
+    font-family: @raleWay;
+}
+
+.hero-image {
+    text-align: center;
+}
