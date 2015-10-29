@@ -1,0 +1,45 @@
+body {
+	background-image: url("../images/bg.png");
+}
+
+.site-wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: orange;
+	opacity: 0.75;
+}
+
+nav {
+	text-align: right;
+}
+
+ul {
+	padding: 15px;
+}
+
+li {
+	display: inline;
+}
+
+nav a{
+	padding: 10px 15px;
+	text-decoration: none;
+	display:inline-block;
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+aside {
+	float: left;
+	padding: 20px;
+}
+
+.hero-image {
+	text-align: center;
+}
