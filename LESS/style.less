@@ -1,18 +1,98 @@
+//varibles
+
 @raleWay: "Raleway", sans-serif;
 @roboto: "Roboto", sans-serif;
+@redColor: #e53935;
 
-body {
-    background-image: url("../images/bg.png");
-    font-family: @roboto;
+//mixin
+
+.end-border {
+    border-right: none;
 }
+
+//Classes & IDs
+
 .site-wrap {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.bg-container {
+    background-color: white;
+    margin: 0 50px;
+}
+
+.main-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sfv-logo {
+    padding-top: 20px;
+}
+
+#bottom-section {
+    text-align: center;
+}
+
+.bottom-list {
+    li {
+        display: inline;
+        padding: 10px;
+        border-right: solid 2px black;
+    }
+    li:last-of-type {
+        .end-border;
+    }
+}
+
+.article-header {
+    margin-bottom: 0px;
+    padding-top: 25px;
+}
+
+.hero-image {
+    text-align: center;
+    p {
+        text-align: left;
+    }
+    .by-line {
+        text-align: center;
+        font-size: 12px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
+
+.faqs {
+    h2 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: black;
+    }
+    p {
+    padding-top: 0px;
+    }
+}
+
+//Elements
+
+body {
+    background-image: url("../images/bg.jpg");
+    font-family: @roboto;
+}
+
+p {
+    padding: 20px;
+}
+
+hr {
+    margin: 20px;
+}
+
 header {
-    background-color: orange;
-    opacity: 0.75;
+    background-color: @redColor;
+    margin: 50px;
 }
 
 nav {
@@ -28,21 +108,21 @@ nav {
     color: black;
         }   
     }
+    ul {
+        padding: 15px;
+        margin-bottom: 0px;
+    }
+    li {
+        display: inline;
+    }
 }
 
-ul {
-    padding: 15px;
-}
 
-li {
-    display: inline;
-}
 
 aside {
     float: left;
     padding: 20px;
     width: 25%;
-
     img {
         padding: 0 17%;
     }
@@ -50,13 +130,26 @@ aside {
     h2 {
         text-align: center;
     }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: @raleWay;
+    color: @redColor;
 }
 
-.hero-image {
+footer {
     text-align: center;
+    font-size: 20px;
+    width:100%;
 }
