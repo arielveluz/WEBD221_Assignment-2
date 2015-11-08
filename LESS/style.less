@@ -23,6 +23,7 @@
 }
 
 .main-title {
+    font-size: 35px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -33,6 +34,7 @@
 
 #bottom-section {
     text-align: center;
+    clear: both;
 }
 
 .bottom-list {
@@ -42,11 +44,12 @@
         border-right: solid 2px black;
     }
     li:last-of-type {
-        .end-border;
+        .end-border; //example of mixin
     }
 }
 
 .article-header {
+    font-size: 30px;
     margin-bottom: 0px;
     padding-top: 25px;
 }
@@ -62,16 +65,31 @@
         padding-top: 0px;
         margin-top: 0px;
     }
+    ul {
+    text-align: left;
+    padding-bottom: 20px;
+    }
 }
 
 .faqs {
     h2 {
-    margin-left: 20px;
-    margin-bottom: 0px;
-    color: black;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        color: black;
     }
     p {
-    padding-top: 0px;
+        padding-top: 0px;
+    }
+}
+
+.featured {
+    font-size: 30px;
+}
+
+#useful-links {
+    list-style-type: none;
+    a:visited{
+        color: blue;
     }
 }
 
@@ -104,7 +122,7 @@ nav {
         display:inline-block;
         color: black;
 
-    a:visited {
+    &:visited {
     color: black;
         }   
     }
@@ -116,8 +134,6 @@ nav {
         display: inline;
     }
 }
-
-
 
 aside {
     float: left;
